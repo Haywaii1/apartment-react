@@ -1,12 +1,17 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import './style.css'; // Import CSS file
+import Navbar from './Navbar';
 
 const BookingPage = () => {
   const { id } = useParams();
 
   return (
+    <div>
+        <Navbar />
+      
     <div className="booking-container">
+      
       <h2 className="booking-title">Book Your Property</h2>
       <p className="booking-subtitle">You are booking property ID: <strong>{id}</strong></p>
 
@@ -28,6 +33,7 @@ const BookingPage = () => {
 
         <button type="submit" className="booking-button">Confirm Booking</button>
       </form>
+    </div>
     </div>
   );
 };

@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './style.css';
+import Navbar from './Navbar';
 
 const properties = [
   {
@@ -37,7 +38,12 @@ const Properties = () => {
   const navigate = useNavigate();
 
   return (
+    <div>
+            <Navbar />
+        
+    
     <div className="properties-container">
+        
       <h2 className="properties-title">Available Properties</h2>
       
       <div className="properties-grid">
@@ -56,6 +62,7 @@ const Properties = () => {
           </div>
         ))}
       </div>
+    </div>
     </div>
   );
 };

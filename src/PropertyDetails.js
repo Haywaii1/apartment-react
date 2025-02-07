@@ -1,6 +1,7 @@
 import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import './style.css';
+import Navbar from './Navbar';
 
 // Sample properties list (replace with API fetch if needed)
 const properties = [
@@ -45,7 +46,11 @@ const PropertyDetails = () => {
   }
 
   return (
+    <div style={{ marginBottom: '30px' }}>
+        <Navbar />
+        
     <div className="property-details-container">
+
       <img src={property.image} alt={property.title} className="property-details-image" />
       <h2 className="property-details-title">{property.title}</h2>
       <p className="property-details-description">{property.description}</p>
@@ -58,6 +63,7 @@ const PropertyDetails = () => {
       <button className="make-payment-button" onClick={() => navigate(`/payment/${property.id}`)}>
         Make Payment
       </button>
+    </div>
     </div>
   );
 };

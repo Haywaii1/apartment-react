@@ -24,11 +24,18 @@ body {
   }
   
   .header {
-    background: url('https://via.placeholder.com/1600x400') no-repeat center center/cover;
-    color: #fff;
+    background-image: url('https://th.bing.com/th/id/R.ff838f9c40c6b4d240383edc2eb6f556?rik=GQQhipI1Zj%2b9Qw&pid=ImgRaw&r=0'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Adjust height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; /* Ensure text is visible */
     text-align: center;
-    padding: 50px 0;
   }
+  
   
   .navbar {
     background: #0056b3;
@@ -53,6 +60,14 @@ body {
     text-decoration: none;
     font-weight: bold;
   }
+  .navbar ul li a:hover {
+    color: #000; 
+    transition: color 0.3s ease; 
+  }
+  .navbar ul li a:focus {
+    color: #e70505;
+}
+
   
   .navbar ul .float-right {
     margin-left: auto;
@@ -68,7 +83,7 @@ body {
   }
   
   .hero button {
-    background: #ff9800;
+    background: #007bff;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -601,3 +616,65 @@ body {
   background-color: #0056b3;
 }
 
+
+/* Auth Form Styling (Both Login & Register) */
+.form-container {
+  width: 350px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.form-container h2 {
+  margin-bottom: 20px;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.auth-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.auth-btn:hover {
+  background-color: #555;
+}
+
+.home-view-more {
+  width: 100%;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.home-view-more:hover {
+  background-color: #218838;
+}
