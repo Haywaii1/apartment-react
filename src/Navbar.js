@@ -11,7 +11,6 @@ const Navbar = () => {
             <li><Link to="/">Home</Link></li>
             <li><Link to="/contact">Contact Us</Link></li>
             <li><Link to="/properties">Properties</Link></li>
-            <li><Link to="/dashboard">Dashboard</Link></li>
             <div className="float-right" style={{ display: "flex" }} >
               <li ><Link to="/register">Register</Link></li>
               <li ><Link to="/login">Login</Link></li>
